@@ -189,7 +189,7 @@ body {
     overflow: hidden;
 }
 
-header{
+header {
     font-size: xx-large;
     font-weight: 600;
     position: absolute;
@@ -197,39 +197,39 @@ header{
     left: 0;
     right: 0;
     height: 80px;
-    border-radius: 40px;
+    background-color: rgba(255, 106, 0, 0.6); /* Adjust the alpha channel to set transparency */
+    box-shadow: 0 0 10px rgba(255, 106, 0, 0.5);
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 2;
-}
-.header-bar{
-    border: #ff6a00 solid 2px;
+    color: white; /* Text color */
 }
 .Form {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the content horizontally */
-    justify-content: center; /* Center the content vertically */
+    align-items: center;
+    justify-content: center;
     width: 380px;
-    height: 480px;
-    margin: 270px auto; /* Center the form horizontally and add some top margin */
-    background: rgba(255, 255, 255, 0.6); /* Set background color with 60% transparency */
-    padding: 10px;
+    min-height: 200px; /* Set a minimum height for the form */
+    margin: 200px auto;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
     position: relative;
     z-index: 2;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(255, 106, 0, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 106, 0, 0.7);
+    color: white;
 }
 
 .name {
-    margin-top: 20px; /* Adjust the margin for spacing */
+    margin-top: 20px;
     margin-bottom: 10px;
     font-size: x-large;
     font-weight: 600;
+    color: white; /* Text color */
 }
-
 .login-input {
     margin-top: 10px; /* Adjust the margin for spacing */
     margin-left: auto;
@@ -237,18 +237,35 @@ header{
 }
 
 .input-feild {
-    height: 20px;
-    margin: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 40px; /* Increase the input field height for better visibility */
+    width: 100%; /* Make the input fields wider */
+    margin: 10px 0; /* Adjust the margin for spacing */
+    background: transparent; /* Make input fields transparent */
+    border: none;
+    border-bottom: 2px solid white; /* Add white border bottom */
+    color: white; /* Text color */
+    font-size: large; /* Increase font size */
+    padding: 5px; /* Add padding for spacing */
 }
-.submit-btn{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.input-feild::placeholder {
+    color: white;
 }
+
+.submit-btn {
+    text-align: center; /* Center the button horizontally */
+    margin-top: 20px; /* Add margin top to separate it from the inputs */
+}
+
+/* Style for the submit button */
 .submit {
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 50%;
+    margin: 20px auto; /* Center the button horizontally and add margin */
+    padding: 10px;
+    background-color: #ff6a00;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: large;
+    font-weight: 600;
 }
