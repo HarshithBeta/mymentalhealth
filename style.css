@@ -269,3 +269,14 @@ header {
     font-size: large;
     font-weight: 600;
 }
+footer{
+    background-color: black;
+    padding: 30px ;
+     }
+
+    .copyright {
+         color: white;
+    }
+    .credits{
+        color: white;
+        }
